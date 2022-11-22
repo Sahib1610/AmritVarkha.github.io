@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale = 1.0">
+    <title>Amrit Varkha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="125px" height="150" width="150">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="MainSite.html">Home</a></li>
+                <li><a href="Pages/Nitnem.html">Nitnem</a></li>
+                <li><a href="pages/Shabad.html">Shabad</a></li>
+                <li><a href="">Wallpapers</a></li>   
+                <li><a href="">Download</a></li>  
+            </ul>
+        </nav>
+        <img src="images/grid.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Read Gurbani In <br> Three Languages</h1>
+            <p>Gurbani (Punjabi: ਗੁਰਬਾਣੀ) is a Sikh term,<br> very commonly used by Sikhs
+            to refer to various compositions <br>by the Sikh Gurus and other writers of Guru Granth Sahib. <br>
+            In general, hymns in the central text of the Sikhs,<br> the Guru Granth Sahib, are called Gurbani.</p>
+            <a href="Explore.html" class="btn">Explore Now &#10146;</a>
+        </div>
+        <div class="col-2">
+            <img src="Images/Khanda.png">
+        </div>
+    </div>
+    </div>
+</div>
+<!-- ---------------script for toggle menu-------------------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if (MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px"
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px"
+        }
+    }
+</script>
+</body>
+</html>
